@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/recommend_layout"
-    tools:context=".View.home.fragment2_recommend">
+    tools:context=".view.home.fragment2_recommend">
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.recyclerview.widget.RecyclerView
