@@ -10,4 +10,6 @@
     <color name="red">#D51616</color>
     <color name="orange">#FF5722</color>
     <color name="yellow">#FF9800</color>
+    <color name="authCode">#3689AF</color>
+    <color name="authCodeAfter">#CEC5BBBB</color>
 </resources>
