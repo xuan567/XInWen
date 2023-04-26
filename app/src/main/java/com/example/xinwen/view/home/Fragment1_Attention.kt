@@ -48,7 +48,7 @@ class fragment1_attention : Fragment() {
         // Inflate the layout for this fragment
         attentionViewModel = ViewModelProvider(this).get(HomeAttentionViewModel::class.java)
         attentionViewModel.attention()
-        attentionViewModel.attentionLiveData.observe(requireActivity(), {
+        attentionViewModel.attentionLiveData.observe(requireActivity()) {
             if (it == null) {
                 Log.d("TAG", "onCreateView: it==null")
                 return@observe
@@ -60,7 +60,7 @@ class fragment1_attention : Fragment() {
             val newsList = it.news as List<String>
             val adapter = AttentionNewsAdapter(newsList)
             attention_recycler.adapter = adapter
-        })
+        }
         return inflater.inflate(R.layout.fragment1_attention, container, false)
 
 
@@ -68,15 +68,6 @@ class fragment1_attention : Fragment() {
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment fragment1_attention.
-         */
-        // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             fragment1_attention().apply {

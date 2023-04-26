@@ -29,12 +29,12 @@ class SearchFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         dashboardViewModel = ViewModelProvider(this).get(SearchViewModel::class.java)
         dashboardViewModel.search()
-        dashboardViewModel.searchLiveData.observe(requireActivity(),{
+        dashboardViewModel.searchLiveData.observe(requireActivity()) {
             creator.text = it.creator
             from.text = it.from
             hitokoto.text = it.hitokoto
 
-        })
+        }
     }
 }
 

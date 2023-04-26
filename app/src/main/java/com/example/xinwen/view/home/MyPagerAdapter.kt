@@ -6,9 +6,9 @@ import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
 
-class MyPagerAdapter(lifecycle: Lifecycle, fm: FragmentManager?, fragmentList: List<Fragment>):
-    FragmentStateAdapter(fm!!,lifecycle){
-    var fragmentList:List<Fragment>
+class MyPagerAdapter(lifecycle: Lifecycle, fm: FragmentManager, fragmentList: List<Fragment>): FragmentStateAdapter(fm,lifecycle){
+
+    private var fragmentList:List<Fragment>
 
     init {
         this.fragmentList = fragmentList

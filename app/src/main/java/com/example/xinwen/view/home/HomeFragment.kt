@@ -48,11 +48,7 @@ class HomeFragment : Fragment() {
             IndicatorLineUtil.setIndicator(tablayout,20,20)
             });
 
-
         return root
-
-
-
     }
 
 }

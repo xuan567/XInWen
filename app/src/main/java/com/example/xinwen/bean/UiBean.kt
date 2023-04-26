@@ -12,7 +12,6 @@ data class CountChange(var textCountNumber : String? = null,
                        var textColor : Int = (R.color.authCodeAfter),
                        var isEnable : Boolean = false )
 
-
 data class LoginAutoCode(
     var error : String? = null,
     var success : Int? = null,
